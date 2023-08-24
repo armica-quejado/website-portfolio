@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Armica Quejado</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <h6>Hi, my name is</h6> <br>
+                <h1>Armica (Mica) Quejado.👋</h1> <br>
+                <!-- Animated intro -->
+                <div class="typing-container">
+                    <span id="typed-text"></span><span id="cursor" class="blinking-cursor">|</span>
+                </div>
+                <script src="js/script.js"></script>
+            </div>
+
+<!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Armica_Grad-3.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                        <p>My name is Armica [ar-MEE-cuh] (Mica) Quejado.<br><br>
+                        I'm an aspiring Web Developer, looking forward to creating beautiful and functional websites.
+                        I am a recent Computer Engineering graduate from San Jose State University. <br><br>During my college career, I discovered my passion for UX/UI design and web development, where I enjoy exploring the connection between art and technology.<br>
+                        <br>With every project and internship I undertake, I am fueled by eagerness to learn in this field. I am excited to embark on a fulfilling journey of growth within the tech industry!</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                    </div>
+
+                    <!-- Education-->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>B.S. in Computer Engineering</span><br>at San Jose State University</li>                            
+                            <li><span>August 2023</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience-->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>aewrwaerwaeX</span><br>Design Web interfaces</li>
+                            <li><span>Webawerawerawer Development</span><br>Design Web interfaces</li>
+                            <li><span>Leadaewrwaerership</span><br>Design Web interfaces</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>fgfff/UX</span><br>Design Web interfaces</li>
+                            <li><span>Wefffffb Development</span><br>Design Web interfaces</li>
+                            <li><span>Leadffffership</span><br>Design Web interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MY RECENT PROJECTS -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Recent Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/SFP.jpg">
+                    <div class="layer">
+                        <h3>Spartan Food Pantry Website</h3>
+                        <p>Live Status Webpage</p>
+                        <a href="SFP.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/SFP_homepage.png">
+                    <div class="layer">
+                        <h3>ARMICA Select</h3>
+                        <p>ioawejrioawejriewr</p>
+                        <a href="armica-select.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/SFP_homepage.png">
+
+                    <div class="layer">
+                        <h3>Ozone Invaders Scratch Project</h3>
+                        <p>ioawejrioawejriewr</p>
+                        <a href="ozone-invaders.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+<!-- EXPERIENCE -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Work Experience</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/SJSUCCLL.jpg">
+                    <div class="layer">
+                        <h3>SJSU College Corps</h3>
+                        <p>Fellow</p>
+                        <a href="college-corps.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/akbayan.jpg">
+                    <div class="layer">
+                        <h3>AKBAYAN SJSU</h3>
+                        <p>College of Engineering Representative</p>
+                        <a href="akbayan.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+<!-- CONTACT -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect</h1>
+                <p><i class="fa-regular fa-envelope"></i>armicarichelle@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/armica-quejado/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/armica-quejado"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <a href="#" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- SIDEMENU-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    // visible when 0
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    // hidden 
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJSU Spartan Food Pantry Real-Time Webpage</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>SJSU Spartan Food Pantry Real-Time Webpage</h1>
+                <h1><span>Real-Time Webpage</span></h1>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- ABOUT -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Armica_Grad-3.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                    <p>My name is Armica [ar-MEE-cuh] (Mica) Quejado.<br><br>
+                    I'm an aspiring Web Developer, looking forward to creating beautiful and functional websites.
+                    I am a recent Computer Engineering graduate from San Jose State University. <br><br>During my college career, I discovered my passion for UX/UI design and web development, where I enjoy exploring the connection between art and technology.<br>
+                    <br>With every project and internship I undertake, I am fueled by eagerness to learn in this field. I am excited to embark on a fulfilling journey of growth within the tech industry!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                </div>
+
+                <!-- Education-->
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>B.S. in Computer Engineering</span><br>at San Jose State University</li>                            
+                        <li><span>August 2023</span></li>
+                    </ul>
+                </div>
+
+                <!-- Experience-->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>aewrwaerwaeX</span><br>Design Web interfaces</li>
+                        <li><span>Webawerawerawer Development</span><br>Design Web interfaces</li>
+                        <li><span>Leadaewrwaerership</span><br>Design Web interfaces</li>
+                    </ul>
+                </div>
+
+                <!-- Skills -->
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>fgfff/UX</span><br>Design Web interfaces</li>
+                        <li><span>Wefffffb Development</span><br>Design Web interfaces</li>
+                        <li><span>Leadffffership</span><br>Design Web interfaces</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
