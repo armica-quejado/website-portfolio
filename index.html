@@ -65,26 +65,27 @@
                     <!-- Education-->
                     <div class="tab-contents active-tab" id="education">
                         <ul>
-                            <li><span>B.S. in Computer Engineering</span><br>at San Jose State University</li>                            
-                            <li><span>August 2023</span></li>
+                            <li><span>B.S. in Computer Engineering</span></li>       
+                            <li>San Jose State University - August 2023</li>                                             
+
                         </ul>
                     </div>
 
                     <!-- Experience-->
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>aewrwaerwaeX</span><br>Design Web interfaces</li>
-                            <li><span>Webawerawerawer Development</span><br>Design Web interfaces</li>
-                            <li><span>Leadaewrwaerership</span><br>Design Web interfaces</li>
+                            <li><span>UI/UX</span><br>Designed Web interfaces</li><br>
+                            <li><span>Web Development</span><br>Built Fullstack Web Apps</li>
                         </ul>
                     </div>
 
                     <!-- Skills -->
                     <div class="tab-contents" id="skills">
                         <ul>
-                            <li><span>fgfff/UX</span><br>Design Web interfaces</li>
-                            <li><span>Wefffffb Development</span><br>Design Web interfaces</li>
-                            <li><span>Leadffffership</span><br>Design Web interfaces</li>
+                            <li><span>Collaboration and Empathy</span><br>Actively engaging in team projects while understanding others' emotions and viewpoints.</li><br>
+                            <li><span>Time Management and Self-Motivation</span><br>Effectively prioritizing tasks and setting goals to enhance productivity.</li><br>
+                            <li><span>Leadership and Empathy</span><br>Effectively communicating in order to foster collaboration in a team environment that
+                                    guides others towards success.</li>
                         </ul>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
     <!-- MY RECENT PROJECTS -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My Recent Projects</h1>
+            <h1 class="sub-title">Recent Projects</h1>
             <div class="work-list">
                 <div class="work">
                     <img src="images/SFP.jpg">
@@ -109,7 +110,7 @@
                     <img src="images/SFP_homepage.png">
                     <div class="layer">
                         <h3>ARMICA Select</h3>
-                        <p>ioawejrioawejriewr</p>
+                        <p>E-commerce Website </p>
                         <a href="armica-select.html"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -118,7 +119,7 @@
 
                     <div class="layer">
                         <h3>Ozone Invaders Scratch Project</h3>
-                        <p>ioawejrioawejriewr</p>
+                        <p>Scratch Project</p>
                         <a href="ozone-invaders.html"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
@@ -133,7 +134,7 @@
             <h1 class="sub-title">Work Experience</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/SJSUCCLL.jpg">
+                    <img src="images/college-corps.png">
                     <div class="layer">
                         <h3>SJSU College Corps</h3>
                         <p>Fellow</p>
@@ -167,12 +168,14 @@
                 <a href="#" download class="btn btn2">Download Resume</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn3">Submit</button>
                 </form>
+                <span id="msg"></span>
+                
             </div>
         </div>
     </div>
@@ -207,6 +210,27 @@
     function closemenu(){
     sidemenu.style.right = "-200px";
     }
+</script>
+
+
+<!-- CONTACT FORM SCRIPT -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwR7dU9mYASQJx0y74zeQESNM2MU2yvaSsJgo0o3vWSXT9-XZcwp7ENtLUBwCCZQJg4_A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },8000)
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
 </script>
 
 </body>
