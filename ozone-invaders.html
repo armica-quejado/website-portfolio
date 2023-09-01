@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozone Invaders - Scratch Game</title>
+    <title>Ozone Invaders - Scratch Game </title>
     <link rel="stylesheet" href="css/portfolio.css">
 
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="header">
@@ -24,11 +30,8 @@
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <h1>Ozone Invaders Scratch Game</h1>
-                <h1><span>Scratch Game</span></h1>
-                <p>Developed a captivating video game using Scratch to educate elementary students on the significance of the ozone layer while introducing key computer science principles.                                      
-                </p>
-                
+                <h1>Ozone Invaders</h1>
+                <h1><span>Scratch Game 🌎</span></h1>                
             </div>
         </div>
     </div>
@@ -38,7 +41,7 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/ov2.png">
+                 <img src="images/ov/ov.gif">
             </div>
 
             <div class="about-col-2">
@@ -49,7 +52,8 @@
                     by teaching computer science concepts through an after school program.<br><br>
                     One of our main tasks is to create comprehensive program kits that enhance learning concepts by developing Scratch programs 
                     and curating relevant materials. 
-                    <br><br>I collaborated with a team to create <b>Ozone Invaders,</b> a video game to teach kids about the ozone layer and the concept of variables.</p>
+                    <br><br>I collaborated with a team to create <b>Ozone Invaders,</b> a video game to teach kids about the significance of the ozone layer
+                    while introducing key computer science principles.</p>
                     <br>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('education')">My Role</p>
@@ -98,15 +102,15 @@
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">Game Concept</h1>
-        <p><span>Objective:</span> Protect our earth from the Sun's harmful rays by blocking the UV rays that are about to be absorbed.</p><br>
+        <p><b>Objective:</b> Protect our earth from the Sun's harmful rays by blocking the UV rays that are about to be absorbed.</p><br>
         The youth used variables that play a part in affecting the environment and ozone layer. 
         The goal is to protect the earth from the harmful UV rays and minimize its effects on our environment.
         <div class="work-list">
             <div class="work">
-                <img src="images/ov.png">
+                <img src="images/ov/ov.png">
             </div>
             <div class="work">
-                <img src="images/ov-endgame.png">
+                <img src="images/ov/ov-endgame.png">
             </div>
         </div>
         <!-- <a href="#" class="btn">See More</a> -->
@@ -118,7 +122,8 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/Armica_Grad-3.jpg">
+                <img src="images/ov/ov2.png">
+                <img src="images/ov/ov1.png">
             </div>
 
             <div class="about-col-2">
@@ -126,7 +131,7 @@
                     <ol>1. Brainstormed a <b>lesson topic</b> and devised a plan to introduce a computer science concept to students.</ol><br>
                     <ol>2. Constructed engaging <b>PowerPoint presentations</b> with clear agendas and goals, 
                         introducing subjects effectively, and using interactive class activities to explore concepts.</ol><br>
-                    <ol>3. Developed an <b>engaging game using Scratch</b>that captivates and motivates the youth to actively 
+                    <ol>3. Developed an <b>engaging game using Scratch </b>that captivates and motivates the youth to actively 
                         participate in coding and complete the necessary steps for the game to function.</ol><br>
                     <ol>4. Created <b>step-by-step directions</b> for students to follow, enabling them to learn and construct the code.</ol>   
             </div>
@@ -161,5 +166,86 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
+
+<!-- CONTACT -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect</h1>
+                <p><i class="fa-regular fa-envelope"></i>armicarichelle@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/armica-quejado/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/armica-quejado"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <a href="#" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- SIDEMENU-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    // visible when 0
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    // hidden 
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<!-- CONTACT FORM SCRIPT -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwR7dU9mYASQJx0y74zeQESNM2MU2yvaSsJgo0o3vWSXT9-XZcwp7ENtLUBwCCZQJg4_A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },8000)
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
 </body>
 </html>

@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SJSU College Corps</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div id="header">
@@ -25,10 +31,170 @@
             </nav>
             <div class="header-text">
                 <h1>SJSU College Corps</h1>
-                <h1><span> College Corps Fellow</span> 👩‍🏫</h1>
-                <p> An aspiring Front-end Developer based in the Bay Area.</p>
+                <h1><span> Fellow</span>👩🏻‍🏫</h1>
             </div>
         </div>
     </div>
+
+    <!-- ABOUT -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/ccll/cc-headshot.jpg">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">At-a-Glance</h1>
+                        <p>This past academic year I worked with an amazing cohort to deliver interactive computer science education 
+                            to underserved 3-6 graders and work alongside various local communities.             
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Fellow</p>
+                        </div>
+                    <!-- Education-->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>August 2022 - May 2023 </span></li>      
+                        </ul>
+                            <li>Collaborated with a team to build a game using Scratch language to teach kids about the ozone layer and variables concepts.</li> 
+                            <li>Instructed the youth with program kits that improve learning through Scratch and hands-on curated materials.</li>
+                            <li>Conducted recruitment efforts through tabling events on college campus to effectively engage with prospective 
+                                 members by providing information about the organization's initiatives.</li>
+                            <li>Participated in team-building activities that strengthened cooperation, communication, and problem-solving skills.</li>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- CC PROJECT -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <h1 class="sub-title">College Corps Team Project</h1>
+                    <p>
+                        Over the course of a semester, we developed a program kit that addressed one environmental issue, as well as one computer science concept.
+                        The project provided an environmental solution and used computer science to support a impactful resolution.
+                         </p>
+
+                         <a href="ozone-invaders.html" class="btn btn2">Ozone Invaders Game</a>
+
+
+            </div>
+
+            <div class="about-col-1">
+                <img src="images/ov/ov.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PHOTO GALLERY -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Photos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/ccll/ccll1.jpg" >
+                <div class="layer">
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ccll/ccll.gif">
+                <div class="layer">
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ccll/ccll2.jpg">
+                <div class="layer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect</h1>
+                <p><i class="fa-regular fa-envelope"></i>armicarichelle@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/armica-quejado/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/armica-quejado"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <a href="#" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- SIDEMENU-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    // visible when 0
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    // hidden 
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+    }
+</script>
+
+
+<!-- CONTACT FORM SCRIPT -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwR7dU9mYASQJx0y74zeQESNM2MU2yvaSsJgo0o3vWSXT9-XZcwp7ENtLUBwCCZQJg4_A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },8000)
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
 </body>
 </html>
