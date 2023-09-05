@@ -13,67 +13,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>ARMICA Select</h1>
-                <h1><span>E-commerce Website</span></h1>
-            </div>
+<!-- HEADER -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>ARMICA Select</h1>
+            <h1><span>E-commerce Website</span></h1>
         </div>
     </div>
+</div>
 
 <!-- OVERVIEW -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                 <img src="images/select/select.jpg">
+                <img src="images/select/select.jpg">
             </div>
-
             <div class="about-col-2">
                 <h1 class="sub-title">Overview</h1>
                 <p>I created an e-commerce website using Wix Website Builder, 
                     providing a strong foundation for both my passion project and small business endeavor.
                 </p>
                 <p>Effective CMS management involves creating, updating, and optimizing content to provide a positive user experience and achieve specific goals,
-                     such as attracting visitors, driving conversions, and maintaining a consistent online presence.</p>
-  
+                    such as attracting visitors, driving conversions, and maintaining a consistent online presence.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('education')">My Role</p>
-                        <p class="tab-links " onclick="opentab('experience')">Date</p>                   
-
-
+                        <p class="tab-links active-link" onclick="opentab('education')">Responsibilities</p>
+                        <p class="tab-links " onclick="opentab('experience')">Project Context</p>                   
                 </div>
-
-                <!-- My Role-->
+                <!-- Responsibilities -->
                 <div class="tab-contents active-tab" id="education">
-                    <ol>
+                    <ul>
                         <li>Owner</li>
                         <li>Marketing and Advertising</li>
                         <li>Content Management System (CMS) Management</li>
                         <li>Content Creation</li>
                         <li>SEO</li>
-                    </ol>
+                    </ul>
                 </div>
-
-                <!-- Date -->
+                <!-- Project Context -->
                 <div class="tab-contents" id="experience">
                     <ul>
                         <li>February 2021 - Present</li>
+                        <li>Solo project</li>
                     </ul>
                 </div>
             </div>
@@ -81,23 +77,23 @@
     </div>
 </div>
 
-<!-- E-commerce Website -->
+<!-- E-COMMERCE -->
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">E-commerce Website</h1>
-        <p><b>Objective:</b> Protect our earth from the Sun's harmful rays by blocking the UV rays that are about to be absorbed.</p><br>
-        The youth used variables that play a part in affecting the environment and ozone layer. 
-        The goal is to protect the earth from the harmful UV rays and minimize its effects on our environment.
-        <div class="work-list">
-            <div class="work">
-                <img src="images/select/select.gif">
+            <p><b>Objective:</b> Protect our earth from the Sun's harmful rays by blocking the UV rays that are about to be absorbed.</p><br>
+            The youth used variables that play a part in affecting the environment and ozone layer. 
+            The goal is to protect the earth from the harmful UV rays and minimize its effects on our environment.
+            <div class="work-list">
+                <div class="work" id="no-transform">
+                    <img src="images/select/select.gif">
+                </div>
             </div>
-        </div>
         <!-- <a href="#" class="btn">See More</a> -->
     </div>
 </div>
 
-<!-- Email Marketing -->
+<!-- EMAIL -->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -105,7 +101,6 @@
                 <img src="images/ov/ov2.png">
                 <img src="images/ov/ov1.png">
             </div>
-
             <div class="about-col-2">
                 <h1 class="sub-title">Email Marketing</h1>
                     <ol>1. Brainstormed a <b>lesson topic</b> and devised a plan to introduce a computer science concept to students.</ol><br>
@@ -119,15 +114,42 @@
     </div>
 </div>
 
-<!-- Conclusion  -->
+<!-- CONCLUSION  -->
 <div id="about">
     <div class="container">
         <div class="row">
-                <h1 class="sub-title">What I Learned</h1>
-                <p>Through this project, I learned the importance of teamwork in achieving project success. Moreover, it served as 
-                a practical learning experience that not only familiarized me with game design, but also equipped me with the
-                essential skills to implement code using Scratch.</p>
+            <h1 class="sub-title" id="insights">Insights & What I Would Do Differently</h1>
+            <p>Through this project, I learned the importance of teamwork in achieving project success. Moreover, it served as 
+            a practical learning experience that not only familiarized me with game design, but also equipped me with the
+            essential skills to implement code using Scratch.</p>
+        </div>
+    </div>
+</div>
+
+<!-- MY OTHER PROJECTS -->
+<div id="portfolio">
+    <div class="container">
+        <hr class="solid"> <br> <br>
+        <h1 class="sub-title" id="other-projects">Other Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/sfp/SFP.jpg">
+                <div class="layer">
+                    <h3>Spartan Food Pantry Website</h3>
+                    <p>Live Status Webpage</p>
+                    <a href="SFP.html"><i class="fa-solid fa-link"></i></a>
+                </div>
             </div>
+            <div class="work">
+                <img src="images/ov/ov.jpg">
+                <div class="layer">
+                    <h3>Ozone Invaders Game</h3>
+                    <p>Scratch Project</p>
+                    <a href="ozone-invaders.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
     </div>
 </div>
 

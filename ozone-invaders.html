@@ -13,28 +13,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 </head>
+
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#portfolio">Projects</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>Ozone Invaders</h1>
-                <h1><span>Scratch Game 🌎</span></h1>                
-            </div>
+<!-- HEADER -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Ozone Invaders</h1>
+            <h1><span>Scratch Game 🌎</span></h1>                
         </div>
     </div>
+</div>
 
 <!-- OVERVIEW -->
 <div id="about">
@@ -43,7 +44,6 @@
             <div class="about-col-1">
                  <img src="images/ov/ov.gif">
             </div>
-
             <div class="about-col-2">
                 <h1 class="sub-title">Overview</h1>
                 <p>I worked for 
@@ -56,28 +56,28 @@
                     while introducing key computer science principles.</p>
                     <br>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('education')">My Role</p>
-                        <p class="tab-links " onclick="opentab('experience')">Date</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Responsibilities </p>
+                        <p class="tab-links " onclick="opentab('experience')">Project Context</p>
                         <!-- <p class="tab-links " onclick="opentab('skills')">Project Type</p> -->
                 </div>
 
-                <!-- My Role-->
+                <!-- Responsibilities -->
                 <div class="tab-contents active-tab" id="education">
-                    <ol>
+                    <ul>
                         <li>Cirriculum Development</li>
                         <li>PowerPoint Development</li>
                         <li>Programmer</li>
-                    </ol>
+                    </ul>
                 </div>
 
                 <!-- Date -->
                 <div class="tab-contents" id="experience">
                     <ul>
                         <li>January 2023 - April 2023</li>
+                        <li>Team project</li>
                     </ul>
                 </div>
-            <!--
-                <!-- Project Type 
+            <!-- Project Type 
                 <div class="tab-contents" id="skills">
                     <ol>
                         <li>Programming</li>
@@ -90,34 +90,27 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-<!-- Game Concept -->
-<div id="portfolio">
+<!-- GAME CONCEPT -->
+<div id="about">
     <div class="container">
-        <h1 class="sub-title">Game Concept</h1>
-        <p><b>Objective:</b> Protect our earth from the Sun's harmful rays by blocking the UV rays that are about to be absorbed.</p><br>
-        The youth used variables that play a part in affecting the environment and ozone layer. 
-        The goal is to protect the earth from the harmful UV rays and minimize its effects on our environment.
+        <div class="row">
+            <h1 class="sub-title">Game Concept</h1>
+            <p><b>Objective:</b> Protect our earth from the Sun's harmful rays by blocking the UV rays that are about to be absorbed.<br><br>
+            The youth used variables that play a part in affecting the environment and ozone layer. 
+            The goal is to protect the earth from the harmful UV rays and minimize its effects on our environment.</p>
+        </div>
         <div class="work-list">
-            <div class="work">
+            <div class="work" id="no-transform">
                 <img src="images/ov/ov.png">
             </div>
-            <div class="work">
+            <div class="work" id="no-transform">
                 <img src="images/ov/ov-endgame.png">
             </div>
         </div>
-        <!-- <a href="#" class="btn">See More</a> -->
     </div>
 </div>
 
-<!-- Kit Development Breakdown -->
+<!-- KIT DEV -->
 <div id="about">
     <div class="container">
         <div class="row">
@@ -139,15 +132,43 @@
     </div>
 </div>
 
-<!-- Conclusion  -->
+<!-- CONCLUSION  -->
 <div id="about">
     <div class="container">
         <div class="row">
-                <h1 class="sub-title">What I Learned</h1>
-                <p>Through this project, I learned the importance of teamwork in achieving project success. Moreover, it served as 
-                a practical learning experience that not only familiarized me with game design, but also equipped me with the
-                essential skills to implement code using Scratch.</p>
+            <h1 class="sub-title" id="insights">Insights & What I Would Do Different</h1>
+                <ul>
+                    <li>Through this project, I learned the importance of teamwork in achieving project success. Moreover, it served as 
+                        a practical learning experience that not only familiarized me with game design, but also equipped me with the
+                        essential skills to implement code using Scratch.</li>
+                </ul>
+        </div>
+    </div>
+</div>
+
+<!-- MY OTHER PROJECTS -->
+<div id="portfolio">
+    <div class="container">
+        <hr class="solid"> <br> <br>
+        <h1 class="sub-title" id="other-projects">Other Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/sfp/SFP.jpg">
+                <div class="layer">
+                    <h3>Spartan Food Pantry Website</h3>
+                    <p>Live Status Webpage</p>
+                    <a href="SFP.html"><i class="fa-solid fa-link"></i></a>
+                </div>
             </div>
+            <div class="work">
+                <img src="images/select/select1.jpg">
+                <div class="layer">
+                    <h3>ARMICA Select</h3>
+                    <p>E-commerce Website </p>
+                    <a href="armica-select.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -166,7 +187,6 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
-
 
 <!-- CONTACT -->
 <div id="contact">

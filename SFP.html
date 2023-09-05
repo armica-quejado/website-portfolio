@@ -3,88 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SJSU Spartan Food Pantry Real-Time Webpage</title>
+    <title>Spartan Food Pantry - Webpage </title>
     <link rel="stylesheet" href="css/portfolio.css">
 
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#portfolio">Projects</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <h1>SJSU Spartan Food Pantry</h1>
-                <h1><span>Real-Time Webpage</span></h1>
-            </div>
+<!-- HEADER -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>SJSU Spartan Food Pantry</h1>
+            <h1><span>Real-Time Webpage</span></h1>                
         </div>
     </div>
+</div>
 
-    
-<!-- ABOUT -->
+<!-- OVERVIEW -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/Armica_Grad-3.jpg">
+                <img src="images/sfp/SFPLogoStandard02.png">
             </div>
-
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                    <p>My name is Armica [ar-MEE-cuh] (Mica) Quejado.<br><br>
-                    I'm an aspiring Web Developer, looking forward to creating beautiful and functional websites.
-                    I am a recent Computer Engineering graduate from San Jose State University. <br><br>During my college career, I discovered my passion for UX/UI design and web development, where I enjoy exploring the connection between art and technology.<br>
-                    <br>With every project and internship I undertake, I am fueled by eagerness to learn in this field. I am excited to embark on a fulfilling journey of growth within the tech industry!</p>
-
+                <h1 class="sub-title">Overview</h1>
+                    <p>I volunteered at the Spartan Food Pantry for a year, which inspired me to create a website for my senior project. 
+                        My experience at the pantry highlighted the need for a more organized and efficient shopping process, motivating me to simplify it.</p>
+                    <br>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
-                </div>
+                        <p class="tab-links active-link" onclick="opentab('education')">Responsibilities </p>
+                        <p class="tab-links " onclick="opentab('experience')">Project Context</p>
+                        <!-- <p class="tab-links " onclick="opentab('skills')">Project Type</p> -->
+                    </div>
+                    <!-- Responsibilities -->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li>Fullstack Developer</li>
+                        </ul>
+                    </div>
+                    <!-- Project Context -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>February 2023 - August 2023</li>
+                            <li>Team project</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-                <!-- Education-->
-                <div class="tab-contents active-tab" id="education">
-                    <ul>
-                        <li><span>B.S. in Computer Engineering</span><br>at San Jose State University</li>                            
-                        <li><span>August 2023</span></li>
-                    </ul>
-                </div>
+<!-- PROBLEM -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title">The Problem</h1>
+                <p>
+                    The Spartan Food Pantry offers food assistance to San Jose State University students, providing non-perishable items, fresh produce, and refrigerated goods. Students frequently visit the pantry seeking specific items, such as milk and eggs. 
+                    <br><br>Because the pantry's inventory varies, creating a real-time web page displaying current offerings would enable students to check what's available before visiting.</p>
+        </div>
+    </div>
+</div>
 
-                <!-- Experience-->
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>aewrwaerwaeX</span><br>Design Web interfaces</li>
-                        <li><span>Webawerawerawer Development</span><br>Design Web interfaces</li>
-                        <li><span>Leadaewrwaerership</span><br>Design Web interfaces</li>
-                    </ul>
-                </div>
+<!-- SKETCH -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/ov/ov2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Ideation and sketch</h1>
+                    <ol>1. Brainstormed a <b>lesson topic</b> and devised a plan to introduce a computer science concept to students.</ol><br>
+                    <ol>2. Constructed engaging <b>PowerPoint presentations</b> with clear agendas and goals, 
+                        introducing subjects effectively, and using interactive class activities to explore concepts.</ol><br>
+                    <ol>3. Developed an <b>engaging game using Scratch </b>that captivates and motivates the youth to actively 
+                        participate in coding and complete the necessary steps for the game to function.</ol><br>
+                    <ol>4. Created <b>step-by-step directions</b> for students to follow, enabling them to learn and construct the code.</ol>   
+            </div>
+        </div>
+    </div>
+</div>
 
-                <!-- Skills -->
-                <div class="tab-contents" id="skills">
-                    <ul>
-                        <li><span>fgfff/UX</span><br>Design Web interfaces</li>
-                        <li><span>Wefffffb Development</span><br>Design Web interfaces</li>
-                        <li><span>Leadffffership</span><br>Design Web interfaces</li>
-                    </ul>
+<!-- SOLUTION -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title" id="insights">The Solution</h1>
+                <p>Through this project, I learned the importance of teamwork in achieving project success. Moreover, it served as 
+                a practical learning experience that not only familiarized me with game design, but also equipped me with the
+                essential skills to implement code using Scratch.</p>
+                </div>
+        <div class="work-list">
+            <div class="work" id="no-transform">
+                <img src="images/ov/ov.png">
+            </div>
+            <div class="work" id="no-transform">
+                <h1>View Current Inventory</h1>
+                <ol>
+                    1. ordered list
+                </ol>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work" id="no-transform">
+                <h1>Shop and Checkout</h1>
+                <ol>
+                    1. ordered list
+                </ol>
+            </div>
+            <div class="work" id="no-transform">
+                <img src="images/ov/ov.png">
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work" id="no-transform">
+                <img src="images/ov/ov.png">
+            </div>
+            <div class="work" id="no-transform">
+                <h1>Updated Inventory</h1>
+                <ol>
+                    1. ordered list
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONCLUSION -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title" id="insights">Insights & What I Would Do Different</h1>
+                <p>Through this project, I learned the importance of teamwork in achieving project success. Moreover, it served as 
+                a practical learning experience that not only familiarized me with game design, but also equipped me with the
+                essential skills to implement code using Scratch.</p>
+        </div>
+    </div>
+</div>
+
+<!-- MY OTHER PROJECTS -->
+<div id="portfolio">
+    <div class="container">
+        <hr class="solid"> <br> <br>
+        <h1 class="sub-title" id="other-projects">Other Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/select/select1.jpg">
+                <div class="layer">
+                    <h3>ARMICA Select</h3>
+                    <p>E-commerce Website </p>
+                    <a href="armica-select.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ov/ov.jpg">
+                <div class="layer">
+                    <h3>Ozone Invaders Game</h3>
+                    <p>Scratch Project</p>
+                    <a href="ozone-invaders.html"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- CONTACT -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect</h1>
+                <p><i class="fa-regular fa-envelope"></i>armicarichelle@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/armica-quejado/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/armica-quejado"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <a href="#" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- SIDEMENU-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    // visible when 0
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    // hidden 
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- CONTACT FORM SCRIPT -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwR7dU9mYASQJx0y74zeQESNM2MU2yvaSsJgo0o3vWSXT9-XZcwp7ENtLUBwCCZQJg4_A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },8000)
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>

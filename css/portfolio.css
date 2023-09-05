@@ -5,6 +5,11 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* Solid border */
+hr.solid {
+    border: 3px solid #fff;
+}
+
 h1, h2, h6 {
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -152,6 +157,22 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: white;
     margin-bottom: 50px;
+    line-height: 1.25;
+}
+
+#insights{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 50px;
+    line-height: 1.25;
+}
+
+#other-projects{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 50px;
 }
 
 .tab-titles{
@@ -188,6 +209,7 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    list-style-type: circle;
 }
 
 .tab-contents ul li span{
@@ -230,6 +252,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
+    background: linear-gradient(rgba(135, 38, 183, 0.7), rgba(125, 18, 255, 1));
     position: absolute;
     left: 0;
     bottom: 0;
@@ -249,8 +272,25 @@ nav ul li a:hover::after{
     margin-bottom: 20px;
 }
 
+.layer a{
+    margin-top: 20px;
+    color: rgba(125,18,255);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
 .work:hover img{
     transform: scale(1.1);
+}
+
+#no-transform img{
+    transform: none;
 }
 
 .work:hover .layer{

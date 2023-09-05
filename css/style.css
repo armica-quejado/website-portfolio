@@ -262,7 +262,6 @@ nav ul li a:hover::after{
     height: 60px;
     border-radius: 50%;
     text-align: center;
-
 }
 
 .work:hover img{

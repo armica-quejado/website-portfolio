@@ -13,146 +13,146 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="" alt="logo" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
-            </nav>
-
-            <div class="header-text">
-                <h6>Hi, my name is</h6> <br>
-                <h1>Armica (Mica) Quejado.👋</h1> <br>
-                <!-- Animated intro -->
-                <div class="typing-container">
-                    <span id="typed-text"></span><span id="cursor" class="blinking-cursor">|</span>
-                </div>
-                <script src="js/script.js"></script>
+<!-- HEADER -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h6>Hi, my name is</h6> <br>
+            <h1>Armica (Mica) Quejado.👋</h1> <br>
+            <!-- Animated intro -->
+            <div class="typing-container">
+                <span id="typed-text"></span><span id="cursor" class="blinking-cursor">|</span>
             </div>
+            <script src="js/script.js"></script>
+        </div>
+    </div>
+</div>
 
 <!-- ABOUT -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/Armica_Grad-3.jpg">
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Armica_Grad-3.jpg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                    <p>My name is Armica [ar-MEE-cuh] (Mica) Quejado.<br><br>
+                    I'm an aspiring Web Developer, looking forward to creating beautiful and functional websites.
+                    I am a recent Computer Engineering graduate from San Jose State University. <br><br>During my college career, I discovered my passion for UX/UI design and web development, where I enjoy exploring the connection between art and technology.<br>
+                    <br>With every project and internship I undertake, I am fueled by eagerness to learn in this field. I am excited to embark on a fulfilling journey of growth within the tech industry!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
                 </div>
 
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                        <p>My name is Armica [ar-MEE-cuh] (Mica) Quejado.<br><br>
-                        I'm an aspiring Web Developer, looking forward to creating beautiful and functional websites.
-                        I am a recent Computer Engineering graduate from San Jose State University. <br><br>During my college career, I discovered my passion for UX/UI design and web development, where I enjoy exploring the connection between art and technology.<br>
-                        <br>With every project and internship I undertake, I am fueled by eagerness to learn in this field. I am excited to embark on a fulfilling journey of growth within the tech industry!</p>
+                <!-- Education-->
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>B.S. in Computer Engineering</span></li>       
+                        <li>San Jose State University - August 2023</li>                                             
 
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                            <p class="tab-links " onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links " onclick="opentab('skills')">Skills</p>
-                    </div>
+                    </ul>
+                </div>
 
-                    <!-- Education-->
-                    <div class="tab-contents active-tab" id="education">
-                        <ul>
-                            <li><span>B.S. in Computer Engineering</span></li>       
-                            <li>San Jose State University - August 2023</li>                                             
+                <!-- Experience-->
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designed Web interfaces</li><br>
+                        <li><span>Web Development</span><br>Built Fullstack Web Apps</li>
+                    </ul>
+                </div>
 
-                        </ul>
-                    </div>
-
-                    <!-- Experience-->
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>UI/UX</span><br>Designed Web interfaces</li><br>
-                            <li><span>Web Development</span><br>Built Fullstack Web Apps</li>
-                        </ul>
-                    </div>
-
-                    <!-- Skills -->
-                    <div class="tab-contents" id="skills">
-                        <ul>
-                            <li><span>Collaboration and Empathy</span><br>Actively engaging in team projects while understanding others' emotions and viewpoints.</li><br>
-                            <li><span>Time Management and Self-Motivation</span><br>Effectively prioritizing tasks and setting goals to enhance productivity.</li><br>
-                            <li><span>Leadership and Empathy</span><br>Effectively communicating in order to foster collaboration in a team environment that
-                                    guides others towards success.</li>
-                        </ul>
-                    </div>
+                <!-- Skills -->
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Collaboration and Empathy</span><br>Actively engaging in team projects while understanding others' emotions and viewpoints.</li><br>
+                        <li><span>Time Management and Self-Motivation</span><br>Effectively prioritizing tasks and setting goals to enhance productivity.</li><br>
+                        <li><span>Leadership and Empathy</span><br>Effectively communicating in order to foster collaboration in a team environment that
+                                guides others towards success.</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- MY RECENT PROJECTS -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Recent Projects</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/sfp/SFP.jpg">
-                    <div class="layer">
-                        <h3>Spartan Food Pantry Website</h3>
-                        <p>Live Status Webpage</p>
-                        <a href="SFP.html"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/select/select1.jpg">
-                    <div class="layer">
-                        <h3>ARMICA Select</h3>
-                        <p>E-commerce Website </p>
-                        <a href="armica-select.html"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/ov/ov.jpg">
-
-                    <div class="layer">
-                        <h3>Ozone Invaders Game</h3>
-                        <p>Scratch Project</p>
-                        <a href="ozone-invaders.html"><i class="fa-solid fa-link"></i></a>
-                    </div>
+<!-- MY RECENT PROJECTS -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Recent Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/sfp/SFP.jpg">
+                <div class="layer">
+                    <h3>Spartan Food Pantry Website</h3>
+                    <p>Live Status Webpage</p>
+                    <a href="SFP.html"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
-            <!-- <a href="#" class="btn">See More</a> -->
+            <div class="work">
+                <img src="images/select/select1.jpg">
+                <div class="layer">
+                    <h3>ARMICA Select</h3>
+                    <p>E-commerce Website </p>
+                    <a href="armica-select.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ov/ov.jpg">
+                <div class="layer">
+                    <h3>Ozone Invaders Game</h3>
+                    <p>Scratch Project</p>
+                    <a href="ozone-invaders.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
         </div>
+        <!-- <a href="#" class="btn">See More</a> -->
     </div>
+</div>
 
 <!-- EXPERIENCE -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">Work Experience</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/ccll/college-corps.png">
-                    <div class="layer">
-                        <h3>SJSU College Corps</h3>
-                        <p>Fellow</p>
-                        <a href="college-corps.html"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/akb/akbayan.jpg">
-                    <div class="layer">
-                        <h3>AKBAYAN SJSU</h3>
-                        <p>College of Engineering Representative</p>
-                        <a href="akbayan-sjsu.html"><i class="fa-solid fa-link"></i></a>
-                    </div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Work Experience</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/ccll/college-corps.png">
+                <div class="layer">
+                    <h3>SJSU College Corps</h3>
+                    <p>Fellow</p>
+                    <a href="college-corps.html"><i class="fa-solid fa-link"></i></a>
                 </div>
             </div>
-            <!-- <a href="#" class="btn">See More</a> -->
+            <div class="work">
+                <img src="images/akb/akbayan.jpg">
+                <div class="layer">
+                    <h3>AKBAYAN SJSU</h3>
+                    <p>College of Engineering Representative</p>
+                    <a href="akbayan-sjsu.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
         </div>
+        <!-- <a href="#" class="btn">See More</a> -->
     </div>
+</div>
 
 <!-- CONTACT -->
 <div id="contact">
@@ -211,7 +211,6 @@
     sidemenu.style.right = "-200px";
     }
 </script>
-
 
 <!-- CONTACT FORM SCRIPT -->
 <script>
