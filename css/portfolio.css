@@ -238,6 +238,25 @@ nav ul li a:hover::after{
     margin-top: 50px;
 }
 
+#pantry{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 500px));
+    grid-gap: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    grid-template-columns: 65% 35%;
+}
+
+#pantry2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 500px));
+    grid-gap: 100px;
+    margin-top: 50px;
+    grid-template-columns: 35% 65%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
 .work{
     position: relative;
     overflow: hidden;
