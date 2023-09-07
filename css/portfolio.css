@@ -42,11 +42,10 @@ html{
 }
 
 body{
-    /*background-color: #121212;*/
+    background-color: #121212;
     /* background: rgb(177, 156, 217);*/
-    /*background: darkslateblue;*/
-    
-    background: linear-gradient(to right, rgb(177, 156, 217), #B0B5E8, rgb(177, 156, 217));
+    /*background: darkslateblue;*/    
+    /*background: linear-gradient(to right, rgb(177, 156, 217), #B0B5E8, rgb(177, 156, 217));*/
     color: white;
 }
 
@@ -120,7 +119,8 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    color: lightblue;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 35px;
 }
 
 
