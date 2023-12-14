@@ -526,7 +526,8 @@ nav .fas{
     background-size: cover;
     background-repeat: no-repeat;  
     opacity: 0.90;
-    color: rgb(20, 20, 20);
+    color: white;
+    /*color: rgb(20, 20, 20);*/
 }
 .box-container{
     box-sizing: border-box;
@@ -543,7 +544,8 @@ nav .fas{
     height: 250px;
     margin: 15px;
     padding: 10px;
-    color: rgb(20, 20, 20);
+    color: white;
+    /*color: rgb(20, 20, 20);*/
     text-align: center;
     transition: 0.3s ease-in-out;
     display: inline-block;

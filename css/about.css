@@ -229,7 +229,7 @@ nav ul li a:hover::after{
 
 .box1, .box2, .box3{
     width: 400px;
-    height: 250px;
+    height: 300px;
     margin: 15px;
     padding: 10px;
     color: white;
@@ -526,5 +526,12 @@ nav .fas{
 
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .fun-facts {
+        background-size: cover;
+        display: none;
     }
 }
