@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan Food Pantry - Webpage </title>
+    <link rel="stylesheet" href="css/portfolio.css">
+
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/mica.png"
+</head>
+
+<body>
+<!-- HEADER -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" alt="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>SJSU Spartan Food Pantry</h1>
+            <h1><span>Real-Time Webpage 🌽</span></h1>                
+        </div>
+    </div>
+</div>
+
+<!-- OVERVIEW -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sfp/SFPLogoStandard02.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Overview</h1>
+                    <p>The Spartan Food Pantry at San Jose State University assists students facing food insecurity by providing various goods. Implementing a real-time
+                        website for the pantry’s inventory was pioneered as a group project to improve the shopping experience by enabling students to check available items
+                        before visiting, reducing in-store shopping time and creating an overall more efficient experience. This initiative also provides a user-friendly checkout
+                        system for in-person shoppers.</p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Responsibilities </p>
+                        <p class="tab-links " onclick="opentab('experience')">Project Context</p>
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('tools')">Tools</p>
+                    </div>
+                    <!-- Responsibilities -->
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li>Fullstack Developer</li>
+                            <li>Product Designer</li>
+                        </ul>
+                    </div>
+                    <!-- Project Context -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>February 2023 - August 2023</li>
+                            <li>Team project</li>
+                        </ul>
+                    </div>
+                    <!-- Skills -->
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>February 2023 - August 2023</li>
+                            <li>Team project</li>
+                        </ul>
+                    </div>
+                    <!-- Tools -->
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li>Figma</li>
+                            <li>HTML, CSS, JavaScript, Bootstrap</li>
+                        </ul>
+                    </div>                                       
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PROBLEM -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title">The Problem</h1>
+                <p>
+                    Students frequently visit the pantry seeking specific items, such as milk and eggs. 
+                    <br>As the pantry's stock fluctuates mainly from donations, setting up a live web page showcasing current items would allow students to preview available offerings online prior to their visit.<br></p>
+        </div>
+    </div>
+</div>
+
+<!-- DESIGN PROCESS -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sfp/mockup.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Design Process</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- MOCKUP -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/sfp/mockup.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Homepage Mockup</h1>
+                    <ol>1. Place essential navigation links at the <b>header</b> for easy access.</ol><br>
+                    <ol>2. Feature an <b>introductory video</b> in the hero section to familiarize new shoppers with the pantry.</ol><br>
+                    <ol>3. Include a <b>highly visible button</b> that offers users direct access to the status page, recognizing it as the primary destination for most users.</ol><br>
+                    <ol>4. Emphasize the <b>pantry's benefits</b> and its <b>positive impact.</b></ol><br>  
+                    <ol>5. Add a <b>footer</b> containing essential links for convenient navigation.</ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SOLUTION -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title" id="insights">The Solution</h1>
+                <p>The solution to this challenge is to develop a real-time web page that displays the Spartan Food Pantry's current inventory. 
+                    This will allow shoppers to check the availability of specific items online before visiting the pantry, 
+                    ensuring a more efficient and informed experience.</p>
+                </div>
+        <div class="work-list" id="pantry">
+            <div class="work" id="no-transform">
+                <img src="images/sfp/view.gif">
+            </div>
+            <div class="work" id="no-transform">
+                <h1>View Livestatus Inventory</h1>
+                <br><br><li> Users can access the real-time webpage to see if the item they want is available and how much of the item is left. </li><br>
+            </div>
+        </div>
+
+        <div class="work-list" id="pantry2">
+            <div class="work" id="no-transform">
+                <h1>Login and Checkout</h1>
+                <br><br><li>Shoppers must complete checkout before leaving the pantry.</li><br>
+                <li>The shopper must login to their account in order to checkout their items online. </li><br>
+                <li>After verifying their cart, they can proceed to checkout, and the website will automatically log them out for the next shopper.</li><br>
+                <li>The website is updated to show the latest amount of items available.</li>
+            </div>
+            <div class="work" id="no-transform">
+                <img src="images/sfp/shop.gif">
+            </div>
+        </div>
+
+        <div class="work-list" id="pantry">
+            <div class="work" id="no-transform">
+                <img src="images/sfp/add.gif">
+            </div>
+            <div class="work" id="no-transform">
+                <h1>Admin Inventory Management</h1>
+                <br><br><li>Admins can add, edit, and delete items.</li><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONCLUSION -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <h1 class="sub-title" id="insights">Insights & What I Would Do Different</h1>
+            <li><b>Prioritize technology research:</b> We focused too much on aesthetics at the expense of functionality. I would dedicate more time to backend technology research to align better with our goals.</li>
+            <li><b>Use more Bootstrap:</b> We recognize Bootstrap's utility and believe increasing its integration within the project would have yielded significant benefits.</li>        
+            <li><b>Conduct a user survey:</b> It would have been beneficial to gather input from shoppers beforehand, asking for their suggestions and desires for the pantry's web services.</li>
+
+            <br><br><p>If I were to launch this project on campus, I'd be eager to invest more effort in enhancing it. This might involve recruiting a dedicated team and potentially transforming it into a versatile app instead of just a website. 
+                Additionally, I'd like to introduce some exciting features, such as implementing a reward system aimed at motivating users to revisit the pantry. </p>
+        </div>
+    </div>
+</div>
+
+<!-- MY OTHER PROJECTS -->
+<div id="portfolio">
+    <div class="container">
+        <hr class="solid"> <br> <br>
+        <h1 class="sub-title" id="other-projects">Other Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/select/select1.jpg">
+                <div class="layer">
+                    <h3>ARMICA Select</h3>
+                    <p>E-commerce Website </p>
+                    <a href="armica-select.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ov/ov.jpg">
+                <div class="layer">
+                    <h3>Ozone Invaders Game</h3>
+                    <p>Scratch Project</p>
+                    <a href="ozone-invaders.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- CONTACT -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Let's Connect</h1>
+                <p><i class="fa-regular fa-envelope"></i>armicarichelle@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/armica-quejado/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/armica-quejado"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+                <a href="pdf/Armica_Quejado_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!-- SIDEMENU-->
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    // visible when 0
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    
+    // hidden 
+    function closemenu(){
+    sidemenu.style.right = "-200px";
+    }
+</script>
+
+<!-- CONTACT FORM SCRIPT -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwR7dU9mYASQJx0y74zeQESNM2MU2yvaSsJgo0o3vWSXT9-XZcwp7ENtLUBwCCZQJg4_A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },8000)
+            form.reset() 
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Armica Quejado</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
 
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -33,6 +33,7 @@
             </ul>
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
+        
         <div id="about">
             
                 <div class="row">
@@ -80,36 +81,59 @@
                     </div>
                 </div>
             
+<!-- FUN FACTS -->
+<div class="fun-facts">
+        <div class="facts-container">
+            <div class="box1">
+                <i class="fa-solid fa-headphones fa-3x"></i>
+                <h2>Music</h2>
+                <p>8/10 chance you'll find me wearing headphones and listening to music.</p>
+            </div>
+
+            <div class="box2">
+                <i class="fa-solid fa-camera-retro fa-3x"></i>
+                
+                <h2>Film</h2>
+                <p>I can fill an entire wall with photos. There's just something special about physical photos.</p>
+            </div>
+
+            <div class="box3">
+                <i class="fa-solid fa-person-running fa-3x"></i>
+                <h2>Running</h2>
+                <p>Half Marathon #4 in 2024? We'll see...</p>
+            </div>
+        </div>
+</div>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's Connect</h1>
+                    <p><i class="fa-regular fa-envelope"></i>armicarichelle@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/armica-quejado/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/armica-quejado"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                    <a href="pdf/Armica_Quejado_Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- CONTACT 
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Let's Connect</h1>
-                <p><i class="fa-regular fa-envelope"></i>armicarichelle@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/armica-quejado/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                    <a href="https://github.com/armica-quejado"><i class="fa-brands fa-github"></i> GitHub</a>
-                </div>
-                <a href="pdf/Armica_Quejado_Resume.pdf" download class="btn btn2">Download Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn3">Submit</button>
-                </form>
-                <span id="msg"></span>
-                
-            </div>
-        </div>
-    </div>
-</div>-->
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");

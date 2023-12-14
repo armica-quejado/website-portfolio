@@ -2,12 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* Solid border */
-hr.solid {
-    border: 3px solid #fff;
+    /*font-family: 'Courier New', Courier, monospace;*/
+    /*background-color: #B0B5E8;*/
 }
 
 h1, h2, h6 {
@@ -42,19 +38,20 @@ html{
 }
 
 body{
-    /*background-color: #121212;
-    /* background: rgb(177, 156, 217);*/
-    /*background: darkslateblue;*/    
-    background: linear-gradient(to right, rgb(177, 156, 217), #B0B5E8, rgb(177, 156, 217));
+    background-image: url('/images/background/about.jpg');
+    background-repeat: repeat;
+    height: 100vh; 
+    width: 100%;
     color: white;
 }
 
 #header{
-    margin-top: 30px;
     width: 100%;
-    height: 100vh;
+    padding-top: 20px;
+    height: 95vh;
     background-size: cover;
     background-position: center;
+
 }
 
 .container{
@@ -119,15 +116,14 @@ nav ul li a:hover::after{
 }
 
 .header-text h1 span{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 35px;
+    color: lightblue;
 }
 
 
 /* ABOUT SECTION */
 #about{
-    margin-top: 0;
-    padding: 20px 0;
+    margin-top: 5%;
+    padding: 80px 0;
     color: white;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
@@ -140,7 +136,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 35%;
+    flex-basis: 30%;
 }
 
 .about-col-1 img{
@@ -157,28 +153,12 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: white;
     margin-bottom: 50px;
-    line-height: 1.25;
-}
-
-#insights{
-    font-size: 40px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 50px;
-    line-height: 1.25;
-}
-
-#other-projects{
-    font-size: 40px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 50px;
 }
 
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
-    text-shadow: 2px 2px 10px rgba(125, 18, 255, 1);
+        text-shadow: 2px 2px 10px rgba(125, 18, 255, 1);
     /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 }
 
@@ -195,7 +175,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: linear-gradient(to bottom right, rgb(125, 18, 255), #8726b7);
+    background: linear-gradient(to bottom right, rgb(115, 0, 255),  rgb(48, 0, 107));;
     position: absolute;
     left: 0;
     bottom: -15px;
@@ -209,11 +189,10 @@ nav ul li a:hover::after{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
-    list-style-type: circle;
 }
 
 .tab-contents ul li span{
-    color: rgb(82, 25, 152);
+    color: rgb(48, 0, 107);
     font-size: 20px;
     font-weight: bold;
 }
@@ -226,6 +205,73 @@ nav ul li a:hover::after{
     display: block;
 }
 
+
+/* PROJECT GOALS */
+.fun-facts{
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 30px;
+    background-image: url('/images/background/about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    opacity: 0.90;
+    color: white;
+}
+.facts-container{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.box1, .box2, .box3{
+    width: 400px;
+    height: 250px;
+    margin: 15px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.box1:hover, .box2:hover, .box3:hover{
+    transform: translateY(-10px);
+}
+
+.fab{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    color: #8726b7;
+}
+
+
+.facts-container h1{
+    text-align: center;
+}
+
+.facts-container h2{
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-top: 30px;
+
+}
+
+.box1 p,
+.box2 p,
+.box3 p{
+    font-weight: bold;
+    font-size: medium;
+    line-height: 1.6;
+
+    margin-top: 20px;
+}
+
+
 /* PORTFOLIO */
 #portfolio{
     padding: 50px 0;
@@ -236,25 +282,6 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
-}
-
-#pantry{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 500px));
-    grid-gap: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    grid-template-columns: 65% 35%;
-}
-
-#pantry2{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(550px, 500px));
-    grid-gap: 100px;
-    margin-top: 50px;
-    grid-template-columns: 35% 65%;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 .work{
@@ -306,10 +333,6 @@ nav ul li a:hover::after{
 
 .work:hover img{
     transform: scale(1.1);
-}
-
-#no-transform img{
-    transform: none;
 }
 
 .work:hover .layer{
@@ -504,61 +527,4 @@ nav .fas{
     .contact-left, .contact-right{
         flex-basis: 100%;
     }
-}
-
-/* PROJECT GOALS */
-.goals{
-    text-align: center;
-    padding: 30px;
-
-}
-.box-container{
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-}
-
-.box1, .box2, .box3{
-    background-color: #B0B5E8;
-    width: 400px;
-    height: 250px;
-    margin: 15px;
-    padding: 10px;
-    color: whitesmoke;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.box1:hover, .box2:hover, .box3:hover{
-    background-color: purple;
-}
-
-.fab{
-    margin-top: 20px;
-    padding: 30px;
-    margin-top: 40px; /* Increase the margin-top value to lower the icon more */
-    padding: 30px;
-}
-
-
-.box-container h1{
-    text-align: center;
-}
-
-.box-container h3{
-    letter-spacing: 2px;
-    margin-top: 30px;
-}
-
-.box1 p,
-.box2 p,
-.box3 p{
-    line-height: 1.6;
-    padding: 0 10px;
-    margin-top: 10px;
 }
