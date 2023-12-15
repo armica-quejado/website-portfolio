@@ -9,7 +9,7 @@
 h1, h2, h6 {
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    text-shadow: 2px 2px 10px rgba(125, 18, 255, 1);
+    text-shadow: 2px 2px 10px #7d12ff;
 }
 
 html{
@@ -534,4 +534,8 @@ nav .fas{
         background-size: cover;
         display: none;
     }
+}
+
+.custom-color{
+    color: #8052eb;
 }

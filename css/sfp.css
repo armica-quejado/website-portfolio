@@ -8,7 +8,7 @@
 /* Solid border */
 hr.solid {
   border: 3px solid transparent;
-  border-image: linear-gradient(to right, #E4CB19, #02476c);
+  border-image: linear-gradient(to right, #00c3ff, #02476c);
   border-image-slice: 1;
 }
 
@@ -53,7 +53,7 @@ body{
     width: 100%;
     height: 100vh;
     background-position: center;
-    background-image: url('/images/background/oz.jpg');
+    background-image: url('/images/background/sfp2.jpg');
     background-size: cover;
     background-repeat: no-repeat;    
 }
@@ -204,7 +204,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: linear-gradient(to bottom right, #E4CB19, #02476c);
+    background: linear-gradient(to bottom right, #00c3ff, #02476c);
     position: absolute;
     left: 0;
     bottom: -15px;
@@ -519,7 +519,7 @@ nav .fas{
 .goals{
     text-align: center;
     padding: 30px;
-    background-image: url('/images/background/oz.jpg');
+    background-image: url('/images/background/sfp1.jpg');
     background-size: cover;
     background-repeat: no-repeat;  
     opacity: 0.90;
@@ -582,7 +582,7 @@ nav .fas{
 }
 
 .custom-color{
-    color: #02476c;
+    color: #253A59;
 }
 
 /* For screens larger than 1200px width */
