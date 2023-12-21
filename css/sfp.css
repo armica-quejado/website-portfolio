@@ -16,6 +16,7 @@ h1, h2, h6 {
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     text-shadow: 4px 4px 10px #02476c;
+    line-height: 1.5;
 }
 
 html{
@@ -155,11 +156,16 @@ nav ul li a:hover::after{
 
 .about-col-1 img{
     width: 100%;
+
     border-radius: 5px;
 }
 
 .about-col-2{
     flex-basis: 60%;
+}
+
+.about-col-1 .circle-image {
+    border-radius: 50%;
 }
 
 .sub-title{
