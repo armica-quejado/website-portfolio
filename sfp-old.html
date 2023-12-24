@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spartan Food Pantry - Webpage </title>
-    <link rel="stylesheet" href="css/sfp.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 
     <!-- Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,7 +26,7 @@
             <img src="" alt="" class="logo">
             <ul id="sidemenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#about">About</a></li>
                 <li><a href="index.html#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fas fa-times" onclick="closemenu()"></i>
@@ -34,8 +34,8 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <h1>Spartan Food Pantry Real-Time Website</h1><br>
-            <h3>A new hassle-free shopping experience 🌽</h3>                
+            <h1>SJSU Spartan Food Pantry</h1>
+            <h1><span>Real-Time Webpage 🌽</span></h1>                
         </div>
     </div>
 </div>
@@ -45,27 +45,26 @@
     <div class="container">
         <div class="row">
             <div class="about-col-1">
-                <img src="images/sfp/sfpp.png" class="circle-image">
+                <img src="images/sfp/SFPLogoStandard02.png">
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">Overview</h1>
-                    <p>The Spartan Food Pantry at San Jose State University assists students facing food insecurity by providing various goods. 
-                        
-                        <br><br>Implementing a real-time website for the pantry's inventory was pioneered as a group project to improve the shopping experience by enabling students to check available items
-                        before visiting, reducing in-store shopping time and creating an overall more efficient experience. 
-                        <br><br>This initiative also provides a user-friendly checkout
+                    <p>The Spartan Food Pantry at San Jose State University assists students facing food insecurity by providing various goods. Implementing a real-time
+                        website for the pantry’s inventory was pioneered as a group project to improve the shopping experience by enabling students to check available items
+                        before visiting, reducing in-store shopping time and creating an overall more efficient experience. This initiative also provides a user-friendly checkout
                         system for in-person shoppers.</p>
                     <br>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('education')">Responsibilities </p>
                         <p class="tab-links " onclick="opentab('experience')">Project Context</p>
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
                         <p class="tab-links " onclick="opentab('tools')">Tools</p>
                     </div>
                     <!-- Responsibilities -->
                     <div class="tab-contents active-tab" id="education">
                         <ul>
                             <li>Fullstack Developer</li>
-                            <li>Service and Visual Designer</li>
+                            <li>Product Designer</li>
                         </ul>
                     </div>
                     <!-- Project Context -->
@@ -87,11 +86,6 @@
                         <ul>
                             <li>Figma</li>
                             <li>HTML, CSS, JavaScript, Bootstrap</li>
-                            <li>MySQL</li>
-                            <li>Jira</li>
-                            <li>Git</li>
-                            <li>Notion</li>
-                            <li>Slack</li>
                         </ul>
                     </div>                                       
             </div>
@@ -99,137 +93,27 @@
     </div>
 </div>
 
-<!-- PROBLEM & SOLUTION -->
+<!-- PROBLEM -->
 <div id="about">
     <div class="container">
         <div class="row">
-            <h1 class="sub-title">The Problem & Solution</h1>
+            <h1 class="sub-title">The Problem</h1>
                 <p>
-                    Students frequently visit the pantry seeking specific items, such as milk and eggs. Since the pantry's inventory varies mostly through donations,
-                     creating a <b>live webpage displaying the current items available</b> would allow students to preview what's available online before they come in.
+                    Students frequently visit the pantry seeking specific items, such as milk and eggs. 
+                    <br>As the pantry's stock fluctuates mainly from donations, setting up a live web page showcasing current items would allow students to preview available offerings online prior to their visit.<br></p>
         </div>
     </div>
 </div>
 
-<!-- GOALS -->
-<div class="goals">
-    <h1>Project Goals</h1>
-        <div class="box-container">
-            <div class="box1">
-                <i class="fa-solid fa-desktop fa-4x custom-color"></i>
-                <h2>Develop a website</h2>
-                <p>Have real-time data to view pantry's inventory online.</p>
-            </div>
-
-            <div class="box2">
-                <i class="fa-solid fa-carrot fa-4x custom-color"></i>
-                <h2>Food Accessibility</h2>
-                <p>Increase accessibility to tackle food insecurity.</p>
-            </div>
-
-            <div class="box3">
-                <i class="fa-solid fa-basket-shopping fa-4x custom-color"></i>
-                <h2>Checkout System</h2>
-                <p>Step-by-step directions to build the game using Scratch.</p>
-            </div>
-        </div>
-</div>
-
-<!-- THE PROCESS -->
+<!-- DESIGN PROCESS -->
 <div id="about">
     <div class="container">
         <div class="row">
-            <h1 class="sub-title">The Process</h1>
-        </div>
-        <div class="work-list">
-            <div class="work" id="no-transform">
-                <img src="images/sfp/process.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- USER RESEARCH -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-2">
-                <h1 class="sub-title">User Research</h1>
-                    <p>The team conducted a field study by observing the complete shopping process and how shoppers engage with the pantry through volunteer work at the pantry. This was done to
-                            find out the pain points and obstacles faced while shopping at the pantry.
-                        <li>Get an insight for the shopper flow and employee flow</li>
-                        <li>Discover pain points</li>
-                        <li>Collect data through firsthand experience.</li>
-                    </p>                 
-            </div>
             <div class="about-col-1">
-                <img src="images/sfp/lofi.png">
+                <img src="images/sfp/mockup.png">
             </div>
-        </div>
-    </div>
-</div>
-
-<!-- USER JOURNEY MAP -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <h1 class="sub-title">User Journey Map</h1>
-            <p><b>Objective:</b> Protect our planet from the Sun's harmful rays by preventing the absorption of UV rays.<br><br>
-            The youth used variables that play a part in affecting the environment and ozone layer. 
-            The goal is to protect the earth from the harmful UV rays and minimize its effects on our environment.</p>
-        </div>
-        <div class="work-list">
-            <div class="work" id="no-transform">
-                <img src="images/sfp/sitemap.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- PAINPOINTS -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <h1 class="sub-title">Pain Points Dump</h1>
-            <p><b>Objective:</b> Protect our earth from the Sun's harmful rays by blocking the UV rays that are about to be absorbed.<br><br>
-            The youth used variables that play a part in affecting the environment and ozone layer. 
-            The goal is to protect the earth from the harmful UV rays and minimize its effects on our environment.</p>
-        </div>
-        <div class="work-list">
-            <div class="work" id="no-transform">
-                <img src="images/sfp/sitemap.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- WIREFRAMES -->
-<div id="about">
-    <div class="container">
-        <div class="row">
             <div class="about-col-2">
-                <h1 class="sub-title">Low Fidelity Sketches</h1>
-                    <p>Began designing the website by handdrawn sketches.
-                    </p>                 
-            </div>
-
-            <div class="about-col-1">
-                <img src="images/sfp/lofi.png">
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- SITEMAP -->
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <h1 class="sub-title">Sitemap</h1>
-                <p>sitemap to display how a user would flow through the website. </p>
-        </div>
-        <div class="work-list">
-            <div class="work" id="no-transform">
-                <img src="images/sfp/sitemap.png">
+                <h1 class="sub-title">Design Process</h1>
             </div>
         </div>
     </div>
