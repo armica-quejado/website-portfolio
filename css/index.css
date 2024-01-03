@@ -60,7 +60,6 @@ nav{
     justify-content: space-between;
     flex-wrap: wrap ;
     text-shadow: 2px 2px 10px rgba(125, 18, 255, 1);
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 }
 
 .logo{
@@ -154,7 +153,6 @@ nav ul li a:hover::after{
     display: flex;
     margin: 20px 0 40px;
     text-shadow: 2px 2px 10px rgba(125, 18, 255, 1);
-    /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
 }
 
 .tab-links{
