@@ -9,6 +9,7 @@ let roundIndex = 0; // Flag for tracking the rounds of typing
 const textSets = [
   "I'm an aspiring UX/UI Designer.",
   "Product Designer.",
+  "Engineer.",
   "Web Designer."
 ];
 
