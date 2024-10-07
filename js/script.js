@@ -7,9 +7,9 @@ let isErasing = false;
 let roundIndex = 0; // Flag for tracking the rounds of typing
 
 const textSets = [
-  "I'm an aspiring UX/UI Designer.",
+  "I'm a Lab Engineer.",
+  "UX/UI Designer.",
   "Product Designer.",
-  "Engineer.",
   "Web Designer."
 ];
 
@@ -32,7 +32,7 @@ function typeNextLetter() {
       setTimeout(typeNextLetter, 500); // Delay before starting erasing
     }
   } else {
-    if (typedTextElement.textContent.endsWith("aspiring ")) {
+    if (typedTextElement.textContent.endsWith("a ")) {
       isErasing = false;
       setTimeout(() => {
         roundIndex = (roundIndex + 1) % textSets.length; // Move to the next text set
